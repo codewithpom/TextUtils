@@ -1,5 +1,4 @@
 import Navbar from './components/Navbar';
-import './App.css';
 import TextForm from './components/TextForm';
 
 function App() {
