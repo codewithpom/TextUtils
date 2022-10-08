@@ -44,10 +44,17 @@ export default function TextForm(props) {
     const most_used_word = function (str) {
         var max = 0,
             maxChar = '';
+        let chars = [];
         str.split(' ').forEach(function (char) {
-            if (str.split(char).length > max) {
+            let magnitude = str.split(char).length
+            if (magnitude > max) {
                 max = str.split(char).length;
                 maxChar = char;
+                chars.push(char)
+            } else if (magnitude === max) {
+                if (chars.includes(char)) return
+                maxChar += ", " + char
+                chars.push(char)
             }
         });
 
@@ -70,6 +77,16 @@ export default function TextForm(props) {
         var mDisplay = m > 0 ? m + (m === 1 ? " minute:" : " minutes:") : "";
         var sDisplay = s > 0 ? s + (s === 1 ? " second" : " seconds") : "";
         return hDisplay + mDisplay + sDisplay;
+    }
+    function replace() {
+        const old_word = document.getElementById("old_word").value
+        const new_word = document.getElementById("new_word").value
+        let copy_text = text;
+        console.log(old_word)
+        console.log(new_word)
+        copy_text = copy_text.replaceAll(old_word, new_word)
+        console.log(copy_text)
+        change_text(copy_text)
     }
     const [text, change_text] = useState("Enter text here");
 
@@ -100,7 +117,20 @@ export default function TextForm(props) {
                     is the most used word and the average time to read it is <b>{seconds_to_time(text)}</b>.
                 </p>
 
+                <h1>Formatting tools</h1>
+                <p style={{
+                    display: "inline"
+                }}>Replace </p>
+                <input id="old_word" />
+                <p style={{
+                    display: "inline"
+                }}> with </p>
+                <input id="new_word" />
+                <button onClick={replace}>
+                    Go!
+                </button>
                 <h2>Preview</h2>
+
                 <p><b>{text}</b></p>
 
             </div>
