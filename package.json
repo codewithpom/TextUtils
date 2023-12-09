@@ -14,7 +14,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "postbuild": "postcss styles -o public/styles/boot.css"
+    "postbuild": "postcss public/styles -o public/styles/boot.css"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^5.0.0",
