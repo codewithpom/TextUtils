@@ -12,12 +12,12 @@ export default function Navbar() {
 
             },
             {
-                'text': "About",
-                'link': '/about',
+                'text': "Case changer",
+                'link': '/case-changer',
             },
             {
-                'text': 'Tools',
-                'link': '/tools'
+                'text': 'Reading Time Calculator',
+                'link': '/reading-time-calc'
             }
         ]
     }

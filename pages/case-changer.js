@@ -2,6 +2,7 @@
 // useeffect
 // Nextjs is being used here along with bootstrap
 
+import Head from "next/head";
 import { useState, useEffect } from "react";
 function App() {
     const [convertedText, setConvertedText] = useState("");
@@ -59,6 +60,19 @@ function App() {
 
     return (
         <>
+            <Head>
+                <title>Case Changer</title>
+                <meta name="description" content="Case changer for text in almost all languages!" />
+                <meta name="keywords" content="Case changer,text,case converter" />
+                <meta name="author" content="Padmashree Jha" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                {/* for social media */}
+                <meta property="og:title" content="Case Changer" />
+                <meta property="og:description" content="Case changer" />
+                <meta property="og:type" content="website" />
+
+
+            </Head>
             <div className="container">
 
                 <h1 className="text-center">Case Changer</h1>
