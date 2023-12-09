@@ -42,6 +42,7 @@ function App() {
                 <p>Enter the text below to calculate the reading time.</p>
                 <textarea id="text" placeholder="Enter the text here" value={text}
                     onChange={(e) => setText(e.target.value)}
+                    aria-id="text"
 
                 ></textarea>
 
@@ -54,7 +55,7 @@ function App() {
                     max="500"
                     value={wpm}
                     onChange={(e) => setWpm(e.target.value)}
-
+                    aria-id="wpm-slider"
                 />
 
 
