@@ -86,7 +86,7 @@ function App() {
                         rows="3"
                         onChange={handleTextChange}
                         value={text}
-                        aria-id="text"
+
                     ></textarea>
                 </div>
                 {/* add a button to convert it */}
@@ -109,7 +109,7 @@ function App() {
                         rows="3"
                         value={convertedText}
                         readOnly={true}
-                        aria-id="result"
+
                     ></textarea>
 
                 </div>

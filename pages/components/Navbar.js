@@ -4,13 +4,9 @@ import Link from 'next/link'
 
 export default function Navbar() {
     let props = {
-        'title': 'TextUtils',
+        'title': 'TxtUtils',
         'pages': [
-            {
-                'text': "Home",
-                'link': '/',
 
-            },
             {
                 'text': "Case changer",
                 'link': '/case-changer',
@@ -18,7 +14,11 @@ export default function Navbar() {
             {
                 'text': 'Reading Time Calculator',
                 'link': '/reading-time-calc'
-            }
+            },
+            {
+                'text': 'Text Length Calculator',
+                'link': '/text-length-calc'
+            },
         ]
     }
     return (
