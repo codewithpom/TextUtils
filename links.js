@@ -18,6 +18,10 @@ let props = {
             'text': 'Text Splitter',
             'link': '/text-splitter'
         },
+        {
+            'text': 'Email and URL Extractor',
+            'link': '/extractor'
+        },
     ]
 }
 module.exports = props;
