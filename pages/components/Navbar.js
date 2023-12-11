@@ -1,26 +1,9 @@
 import React from 'react'
 // import link from next
 import Link from 'next/link'
-
+import props from '../../links'
 export default function Navbar() {
-    let props = {
-        'title': 'TxtUtils',
-        'pages': [
 
-            {
-                'text': "Case changer",
-                'link': '/case-changer',
-            },
-            {
-                'text': 'Reading Time Calculator',
-                'link': '/reading-time-calc'
-            },
-            {
-                'text': 'Text Length Calculator',
-                'link': '/text-length-calc'
-            },
-        ]
-    }
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
