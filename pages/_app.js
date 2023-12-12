@@ -1,14 +1,14 @@
+import 'bootstrap/dist/css/bootstrap.css'
 import "./App.css"
-import "./index.css"
-import Head from "next/head";
 import Navbar from './components/Navbar';
+import Head from "next/head";
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import "./index.css"
 
 // next/script tag
 import Script from 'next/script';
 
-import 'bootstrap/dist/css/bootstrap.css'
 
 function MyApp({ Component, pageProps }) {
     return (

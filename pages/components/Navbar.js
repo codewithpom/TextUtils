@@ -1,11 +1,21 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 // import link from next
 import Link from 'next/link'
 import props from '../../links'
 export default function Navbar() {
-
+    // check if the system has dark mode enabled
+    const [darkMode, setDarkMode] = useState(false);
+    useEffect(() => {
+        // check if the system has dark mode enabled
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            setDarkMode(true);
+        }
+    }
+    )
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className={
+            darkMode ? "navbar navbar-expand-lg navbar-dark bg-dark" : "navbar navbar-expand-lg navbar-light bg-light"
+        }>
             <div className="container-fluid">
                 {/* <a className="navbar-brand" href="/">{props.title}</a> */}
                 <Link href="/"><a className={"navbar-brand"}>{props.title}</a></Link>
