@@ -20,8 +20,8 @@ code {
     color: white;
   }
   textarea {
-    --bs-bg-opacity: 1;
+    --bs-bg-opacity: 1 !important;
     background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
-    color: white;
+    color: white !important;
   }
 }
