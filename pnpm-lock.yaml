@@ -14,6 +14,9 @@ dependencies:
   bootstrap:
     specifier: ^5.3.2
     version: 5.3.2(@popperjs/core@2.11.8)
+  marked:
+    specifier: ^11.1.0
+    version: 11.1.0
   next:
     specifier: ^12.3.1
     version: 12.3.1(react-dom@17.0.2)(react@17.0.2)
@@ -801,6 +804,12 @@ packages:
     hasBin: true
     dependencies:
       js-tokens: 4.0.0
+    dev: false
+
+  /marked@11.1.0:
+    resolution: {integrity: sha512-fvKJWAPEafVj1dwGwcPI5mBB/0pvViL6NlCbNDG1HOIRwwAU/jeMoFxfbRLuirO1wRH7m4yPvBqD/O1wyWvayw==}
+    engines: {node: '>= 18'}
+    hasBin: true
     dev: false
 
   /minimatch@5.1.6:
