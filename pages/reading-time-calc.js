@@ -34,8 +34,6 @@ function App() {
                 <meta property="og:title" content="Reading Time Calculator" />
                 <meta property="og:description" content="Calculate reading time for your text for free!" />
                 <meta property="og:type" content="website" />
-
-
             </Head>
             <div className="container">
                 <h1>Reading Time Calculator</h1>
