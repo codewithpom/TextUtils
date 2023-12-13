@@ -1,3 +1,4 @@
+import { use } from 'marked';
 import Head from 'next/head';
 import { useState } from 'react';
 import { useEffect } from 'react';
@@ -7,7 +8,8 @@ export default function TextToSpeech() {
     const [text, setText] = useState('');
     const [voices, setVoices] = useState([]);
     const [selectedVoice, setSelectedVoice] = useState('');
-    
+    const [isPlaying, setIsPlaying] = useState(false);
+
     useEffect(() => {
         // Get the list of voices
         const synth = window.speechSynthesis;
@@ -20,7 +22,16 @@ export default function TextToSpeech() {
             setVoices(voices);
         };
     }
-    , []);    
+    , []);
+    // change the text content of the button if the isplaying state changes    
+    useEffect(() => {
+        if (isPlaying) {
+            document.getElementById('toogle').textContent = 'Pause';
+        } else {
+            document.getElementById('toogle').textContent = 'Play';
+        }
+    }, [isPlaying]);
+        
     // Function to speak the text
     function speakText() {
         const synth = window.speechSynthesis;
@@ -39,10 +50,10 @@ export default function TextToSpeech() {
     function toogle_play_pause() {
         const synth = window.speechSynthesis;
         if (synth.paused) {
-            document.getElementById('toogle').textContent = 'Pause';
+            setIsPlaying(true);
             synth.resume();
         } else {
-            document.getElementById('toogle').textContent = 'Play';
+            setIsPlaying(false);
             synth.pause();
         }
     }
