@@ -22,6 +22,18 @@ let props = {
             'text': 'Email and URL Extractor',
             'link': '/extractor'
         },
+        {
+            'text': 'Markdown Converter',
+            'link': '/markdown-to-text'
+        },
+        {
+            'text': 'Text to Speech Translator',
+            'link': '/tts.js'
+        },
+        {
+            'text': 'QR Code Generator',
+            'link': 'qr-generator'
+        }
     ]
 }
 module.exports = props;
