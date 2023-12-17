@@ -28,11 +28,11 @@ let props = {
         },
         {
             'text': 'Text to Speech Translator',
-            'link': '/tts.js'
+            'link': '/tts'
         },
         {
             'text': 'QR Code Generator',
-            'link': 'qr-generator'
+            'link': '/qr-generator'
         }
     ]
 }
