@@ -77,28 +77,48 @@ function App() {
                     alert('Text copied to clipboard !')
                 }}>Copy</button>
 
+                <hr></hr>
+                <h2>Introducing the Advanced Text Analysis Tool: Your All-in-One Solution for URL and Email Extraction</h2>
+                <p>In the fast-paced digital age, information is abundant, but extracting meaningful data from the vast sea of text can be a daunting task. Whether you are a researcher, content creator, or simply looking to streamline data gathering, the Advanced Text Analysis Tool is your go-to solution for effortlessly extracting URLs and email addresses from any text.</p>
+                <h3><strong>Unleashing the Power of Text Analysis:</strong></h3>
+                <h4><strong>The Need for Precision:</strong></h4>
+                <p>In a world inundated with data, precision in information extraction is paramount. The Advanced Text Analysis Tool is designed to meet this need head-on, providing a robust mechanism for extracting URLs and email addresses with surgical precision. No more sifting through endless lines of text; our tool empowers you to focus on what matters most.</p>
+                <h4><strong>Versatility Across Domains:</strong></h4>
+                <p>Whether you&#39;re analyzing research papers, code snippets, or customer feedback, the tool adapts seamlessly to various domains. From academic pursuits to content creation and beyond, the Advanced Text Analysis Tool ensures that you extract relevant URLs and emails regardless of the context.</p>
+                <h3><strong>Key Features:</strong></h3>
+                <h4><strong>Intuitive User Interface:</strong></h4>
+                <p>The tool boasts an intuitive user interface that caters to users of all backgrounds. The straightforward design allows you to effortlessly paste your text, click a button, and witness the tool in action. No steep learning curves – just efficient data extraction.</p>
+                <h4><strong>Efficient Extraction Algorithms:</strong></h4>
+                <p>Powered by state-of-the-art extraction algorithms, the tool meticulously identifies and captures URLs and email addresses from even the most intricate text structures. The algorithms are continuously refined to ensure accuracy, making it a reliable companion in your data analysis journey.</p>
+                <h4><strong>Customizable Output:</strong></h4>
+                <p>Recognizing the diverse needs of users, the tool provides customizable output options. Whether you prefer a neatly organized list or a comprehensive report, the Advanced Text Analysis Tool allows you to tailor the output to suit your specific requirements.</p>
+                <h3><strong>How It Works:</strong></h3>
+                <ol>
+                    <li><p><strong>Input Your Text:</strong>
+                        Copy and paste the text you wish to analyze into the tool&#39;s user-friendly interface. The tool accommodates various text lengths, from concise messages to lengthy documents.</p>
+                    </li>
+                    <li><p><strong>Initiate Analysis:</strong>
+                        With a simple click of a button, the tool&#39;s advanced algorithms get to work. The analysis is swift and thorough, scanning the input text for URLs and email addresses.</p>
+                    </li>
+                    <li><p><strong>Review the Results:</strong>
+                        The tool presents the results in an easily digestible format. URLs and emails are neatly organized, allowing you to review and use the extracted information with unparalleled efficiency.</p>
+                    </li>
+                </ol>
+                <h3><strong>Applications Across Industries:</strong></h3>
+                <h4><strong>Research and Academia:</strong></h4>
+                <p>For researchers and academics, the Advanced Text Analysis Tool serves as a time-saving resource. Quickly extract references, source URLs, and contact information from academic papers, facilitating a more streamlined research process.</p>
+                <h4><strong>Content Creation:</strong></h4>
+                <p>Content creators can enhance their workflow by effortlessly extracting URLs and email addresses from various sources. This ensures the integration of accurate information and helps maintain the integrity of the created content.</p>
+                <h4><strong>Cybersecurity and Compliance:</strong></h4>
+                <p>In cybersecurity and compliance industries, where precision is non-negotiable, the tool provides a valuable asset for analyzing logs, reports, and communication data for URLs and email addresses that may require attention.</p>
+                <h3><strong>Looking Ahead:</strong></h3>
+                <p>The Advanced Text Analysis Tool is more than just a data extraction tool; it is a testament to the power of innovation in simplifying complex processes. As we look to the future, our commitment to refining and expanding the capabilities of the tool remains unwavering. We envision a tool that not only meets your current needs but anticipates and adapts to the evolving landscape of data analysis.</p>
+                <h3><strong>Try It Today:</strong></h3>
+                <p>Experience the efficiency of the Advanced Text Analysis Tool firsthand. Visit our website, paste your text, and witness the seamless extraction of URLs and email addresses. Join the ranks of researchers, content creators, and professionals who have elevated their data analysis game with this indispensable tool.</p>
+                <p>In a world where information is king, the Advanced Text Analysis Tool reigns supreme, empowering you to extract valuable insights with unparalleled precision and ease. Welcome to the future of text analysis – where efficiency meets excellence.</p>
 
             </div>
-            <hr></hr>
-            {/* write about it */}
-            <div className='text-center'>
-                <h2>How to use it ?</h2>
-                <p>
-                    Enter the text in the text area and select the type of data you want to extract.
-                </p>
-            </div>
-            <div className='text-center'>
-                <h2>What does it do ?</h2>
-                <p>
-                    It extracts the data from the text and displays it in the resultant text area.
-                </p>
-            </div>
-            <div className='text-center'>
-                <h2>Why was it made ?</h2>
-                <p>
-                    It was made to extract the emails and URLs from the text.
-                </p>
-            </div>
+
 
 
             <style jsx>{`
