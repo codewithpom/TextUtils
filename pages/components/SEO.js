@@ -1,3 +1,5 @@
+import Head from 'next/head'
+
 function SEO(props) {
     return (
         <Head>
