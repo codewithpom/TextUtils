@@ -1,7 +1,7 @@
 // Note: This is a Next.js page
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
-import SEO from './components/SEO'
+import SEO from '../components/SEO'
 function App() {
     const [result, setResult] = useState("");
     const [wpm, setWpm] = useState(140);

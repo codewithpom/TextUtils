@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import "./App.css"
-import Navbar from './components/Navbar';
+import Navbar from '../components/Navbar';
 import Head from "next/head";
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/react"

@@ -1,7 +1,7 @@
 // This is a Nxt.js page
 // With bootstrap
 import { useState, useEffect } from 'react';
-import SEO from './components/SEO'
+import SEO from '../components/SEO'
 
 function App() {
     function findEmails(text) {
