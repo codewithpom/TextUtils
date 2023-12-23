@@ -1,6 +1,7 @@
 // This is a Nxt.js page
 // With bootstrap
 import { useState, useEffect } from 'react';
+import SEO from './components/SEO'
 
 function App() {
     const [no_words, set_no_words] = useState();
@@ -22,8 +23,20 @@ function App() {
 
     return (
         <>
+            <SEO 
+                title={'Text Length Calculator'}
+                description={'Calculate the number of words and charachter and spaces in your text just by a button'}
+                keywords={[
+                    'length',
+                    'text tools',
+                    'text length calculator',
+                    'word',
+                    'charachter',
+                    'counter'
+                ]}
+            />
             <div className="container">
-                < div className='text-center' >
+                <div className='text-center' >
                     <h1>Word and Charachter Counter</h1>
                     <p>Enter the text below to calculate the no of words and charachters in it.</p>
                     <textarea id="text" placeholder="Enter the text here" value={text}

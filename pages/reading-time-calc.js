@@ -1,6 +1,7 @@
 // Note: This is a Next.js page
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
+import SEO from './components/SEO'
 function App() {
     const [result, setResult] = useState("");
     const [wpm, setWpm] = useState(140);
@@ -24,17 +25,16 @@ function App() {
 
     return (
         <>
-            <Head>
-                <title>Reading Time Calculator</title>
-                <meta name="description" content="Calculate reading time for your text for free!" />
-                <meta name="keywords" content="reading time calculator,read time estimator,case converter" />
-                <meta name="author" content="Padmashree Jha" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                {/* for social media */}
-                <meta property="og:title" content="Reading Time Calculator" />
-                <meta property="og:description" content="Calculate reading time for your text for free!" />
-                <meta property="og:type" content="website" />
-            </Head>
+            <SEO 
+                title={'Reading Time Calculator'}
+                description={'Calculate the reading time of your text with custom Words Per Minute Speed'}
+                keywords={[
+                    'reading',
+                    'text tools',
+                    'reading time calculator',
+                    'reading time'
+                ]}
+            />
             <div className="container">
                 <div className='text-center'>
                     <h1>Reading Time Calculator</h1>

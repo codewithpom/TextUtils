@@ -22,6 +22,16 @@ function App() {
                 <meta name="keywords" content="text splitter, content organization, writing tool, text segmentation, content creation" />
                 <meta name="author" content="Padmashree Jha" />
             </Head>
+            <SEO 
+                title={'Text Splitter'}
+                description={'Split your text as per your current delimeter and new delimeter and as you want just with a click !'}
+                keywords={[
+                    'text splitter',
+                    'text tools',
+                    'text organisation',
+                    'writing tool'
+                ]}
+            />
             <div className="container">
                 <div className='text-center'>
                     <h1>Text Splitter</h1>
