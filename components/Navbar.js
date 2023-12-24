@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 // import link from next
 import Link from 'next/link'
-import props from './links'
+import props from '../links'
 export default function Navbar() {
     // check if the system has dark mode enabled
     const [darkMode, setDarkMode] = useState(false);
