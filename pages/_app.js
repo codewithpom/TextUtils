@@ -26,6 +26,15 @@ function MyApp({ Component, pageProps }) {
                 <Script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></Script>
                 <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossOrigin="anonymous"></Script>
             </Head>
+            
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-HWP2J64Z0N"></script>
+                <script>
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                
+                  gtag('config', 'G-HWP2J64Z0N');
+                </script>
             <Navbar />
             <Component {...pageProps} />
         </>
