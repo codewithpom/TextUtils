@@ -2,7 +2,7 @@
 // With bootstrap
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
-
+import SEO from '../components/SEO';
 function App() {
     const [text, setText] = useState('');
     const [existingDelimeter, setExistingDelimeter] = useState('\n');
