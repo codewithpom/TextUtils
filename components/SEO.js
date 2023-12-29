@@ -12,6 +12,11 @@ function SEO(props) {
             <meta property="og:title" content={props.title} />
             <meta property="og:description" content={props.description}/>
             <meta property="og:type" content="website" />
+            {/* Twitter Card */}
+            <meta name="twitter:site" content="@PadmashreeJha" />
+            <meta name="twitter:title" content={props.title} />
+            <meta name="twitter:description" content={props.description} />
+            <meta name="twitter:creator" content="@PadmashreeJha" />
         </Head>
     )
 }
