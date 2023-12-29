@@ -18,6 +18,12 @@ code {
     --bs-bg-opacity: 1;
     background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
     color: white;
+
+  }
+  .card {
+    --bs-bg-opacity: 1;
+    background-color: black !important;
+    color: white;
   }
   textarea {
     --bs-bg-opacity: 1 !important;
