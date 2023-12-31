@@ -36,9 +36,9 @@ export default function Navbar() {
 
 
 
-                            // return the array from the function
+                            // return the array from the function and splice the array to only 8 items
                             return (<>
-                                {props['pages'].map((item, index) => {
+                                {props['pages'].slice(0, 8).map((item, index) => {
                                     return (
                                         <li className="nav-item" key={index}>
                                             {/* <a className="nav-link" href={item.link}>{item.text}</a> */}

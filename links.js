@@ -32,7 +32,7 @@ let props = {
             'description': 'The markdown converter tool converts markdown syntax into plain text. It supports all standard markdown features, including headers, lists, and links. This tool is useful for converting markdown documents for non-markdown environments.'
         },
         {
-            'text': 'Text to Speech Translator',
+            'text': 'Text to Speech Converter',
             'link': '/tts',
             'description': 'The text to speech translator converts written text into spoken words. It uses advanced speech synthesis technology to provide high-quality audio. This tool can be useful for accessibility purposes, language learning, or just for fun.'
         },
@@ -40,6 +40,23 @@ let props = {
             'text': 'QR Code Generator',
             'link': '/qr-generator',
             'description': 'The QR code generator creates a QR code from your input. You can use this tool to generate QR codes for URLs, text, email addresses, phone numbers, and more. QR codes can be scanned with a smartphone to quickly access the encoded information.'
+        },
+        {
+            'text': 'Text Translator',
+            'link': '/trans',
+            // uses Google Translate
+            'description': 'The text translator converts text from one language to another. It uses Google Translate to provide accurate translations in over 100 languages. This tool is useful for translating documents, websites, or any other text.'
+            
+        },
+        {
+            'text': 'Emoji Remover',
+            'link': '/emoji-remover',
+            'description': 'The emoji remover tool removes all emojis from your text. It supports all standard emojis and can be used to clean up text documents or remove emojis from social media posts.'
+        },
+        {
+            'text': 'Text Size Calculator',
+            'link': '/text-size-calc',
+            'description': 'The text size calculator estimates the size of your text in bytes. It can be used to check the size of text documents or to estimate the size of a website.'
         }
     ]
 }
