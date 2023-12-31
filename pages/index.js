@@ -1,7 +1,11 @@
+import { useState } from "react";
 import Link from "next/link";
-import tools from '../links'
+import tools from "../links";
 import SEO from "../components/SEO";
+
 function App() {
+  const [searchTerm, setSearchTerm] = useState("");
+
   // landing page for the app
   return (
     <>
@@ -30,27 +34,45 @@ function App() {
           <h2>Tools we provide :-</h2>
           {/* create a group of bootstrap cards for each tool */}
 
+          {/* Add a search bar */}
+          <div className="d-flex justify-content-end">
+            <input
+              type="text"
+              placeholder="Search tools..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
+          </div>
+          <br />
           <div className="row d-flex justify-content-center">
-            {tools['pages'].map((tool) => {
-              return (
-                <div className="col-sm-4 mb-3" key={tool.text}>
-                  <div className="card h-100">
-                    <div className="card-body d-flex flex-column">
-                      <h5 className="card-title">{tool.text}</h5>
-                      <p className="card-text flex-grow-1">
-                        {tool.description}
-                      </p>
+            {tools["pages"]
+              .filter(
+                (tool) =>
+                  tool.text.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                  tool.description
+                    .toLowerCase()
+                    .includes(searchTerm.toLowerCase())
+              )
+              .map((tool) => {
+                return (
+                  <div className="col-sm-4 mb-3" key={tool.text}>
+                    <div className="card h-100">
+                      <div className="card-body d-flex flex-column">
+                        <h5 className="card-title">{tool.text}</h5>
+                        <p className="card-text flex-grow-1">
+                          {tool.description}
+                        </p>
 
-                      <Link href={tool.link}>
-                        <button className="btn btn-primary mt-auto">
-                          Try it
-                        </button>
-                      </Link>
+                        <Link href={tool.link}>
+                          <button className="btn btn-primary mt-auto">
+                            Try it
+                          </button>
+                        </Link>
+                      </div>
                     </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
           </div>
         </div>
       </div>
