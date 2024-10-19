@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
 
             
             <Head>
-            <meta name="google-adsense-account" content="ca-pub-2735251147722172">
+            <meta name="google-adsense-account" content="ca-pub-2735251147722172" />
                 
 
 
