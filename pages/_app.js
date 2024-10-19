@@ -14,8 +14,7 @@ function MyApp({ Component, pageProps }) {
 
             
             <Head>
-                <meta name="google-site-verification" content="5CUSrmIx1WaE_b-YiA6tpsxnC7G6V6uk2iyx5vp2G1w" />
-
+            <meta name="google-adsense-account" content="ca-pub-2735251147722172">
                 
 
 
