@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
             <Head>
             <meta name="google-adsense-account" content="ca-pub-2735251147722172" />
                 
-
+            <meta name="msvalidate.01" content="38099E1AE93A9BC0C89D053978747CF1" />
                 <Script
                     strategy="lazyOnload"
                     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2735251147722172"
