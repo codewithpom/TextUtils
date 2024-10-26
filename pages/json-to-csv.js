@@ -57,6 +57,16 @@ const JsonToCsv = () => {
         document.execCommand('copy');
     };
 
+    const saveToFile = () => {
+        const blob = new Blob([csvData], { type: 'text/csv' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'output.csv';
+        a.click();
+        URL.revokeObjectURL(url);
+    };
+
     return (
         <>
             <Head>
@@ -102,6 +112,7 @@ const JsonToCsv = () => {
                     readOnly
                 ></textarea>
                 <button className="btn btn-secondary mt-3" onClick={copyToClipboard}>Copy to Clipboard</button>
+                <button className="btn btn-secondary mt-3" onClick={saveToFile}>Save as File</button>
             </div>
         </>
     );
