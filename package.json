@@ -3,8 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@vercel/analytics": "^1.1.1",
-    "@vercel/speed-insights": "^1.0.1",
     "@vitalets/google-translate-api": "^9.2.0",
     "bootstrap": "^5.3.2",
     "marked": "^11.1.0",
