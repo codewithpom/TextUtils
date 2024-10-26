@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Head from 'next/head';
 
 const CsvToJson = () => {
     const [csvData, setCsvData] = useState('');
@@ -26,9 +27,15 @@ const CsvToJson = () => {
 
     const fetchDataFromUrl = async () => {
         try {
-            const response = await fetch(url);
-            const data = await response.text();
-            setCsvData(data);
+            const response = await fetch('/api/fetch-url-content', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ url })
+            });
+            const data = await response.json();
+            setCsvData(data.content);
         } catch (error) {
             console.error('Error fetching data from URL:', error);
         }
@@ -55,40 +62,52 @@ const CsvToJson = () => {
     };
 
     return (
-        <div className="container">
-            <h1>CSV to JSON Converter</h1>
-            <textarea
-                className="form-control"
-                rows="10"
-                placeholder="Enter CSV data here"
-                value={csvData}
-                onChange={handleCsvChange}
-            ></textarea>
-            <input
-                type="file"
-                className="form-control mt-3"
-                accept=".csv"
-                onChange={handleFileChange}
-            />
-            <input
-                type="text"
-                className="form-control mt-3"
-                placeholder="Enter URL to fetch CSV data"
-                value={url}
-                onChange={handleUrlChange}
-            />
-            <button className="btn btn-primary mt-3" onClick={fetchDataFromUrl}>Fetch Data from URL</button>
-            <button className="btn btn-primary mt-3" onClick={convertCsvToJson}>Convert</button>
-            <textarea
-                className="form-control mt-3"
-                rows="10"
-                id="jsonResult"
-                placeholder="JSON result"
-                value={jsonData}
-                readOnly
-            ></textarea>
-            <button className="btn btn-secondary mt-3" onClick={copyToClipboard}>Copy to Clipboard</button>
-        </div>
+        <>
+            <Head>
+                <title>CSV to JSON Converter</title>
+                <meta name="description" content="Convert CSV data to JSON format easily and quickly." />
+                <meta name="keywords" content="CSV to JSON, CSV converter, JSON converter" />
+                <meta name="author" content="Padmashree Jha" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <meta property="og:title" content="CSV to JSON Converter" />
+                <meta property="og:description" content="Convert CSV data to JSON format easily and quickly." />
+                <meta property="og:type" content="website" />
+            </Head>
+            <div className="container">
+                <h1>CSV to JSON Converter</h1>
+                <textarea
+                    className="form-control"
+                    rows="10"
+                    placeholder="Enter CSV data here"
+                    value={csvData}
+                    onChange={handleCsvChange}
+                ></textarea>
+                <input
+                    type="file"
+                    className="form-control mt-3"
+                    accept=".csv"
+                    onChange={handleFileChange}
+                />
+                <input
+                    type="text"
+                    className="form-control mt-3"
+                    placeholder="Enter URL to fetch CSV data"
+                    value={url}
+                    onChange={handleUrlChange}
+                />
+                <button className="btn btn-primary mt-3" onClick={fetchDataFromUrl}>Fetch Data from URL</button>
+                <button className="btn btn-primary mt-3" onClick={convertCsvToJson}>Convert</button>
+                <textarea
+                    className="form-control mt-3"
+                    rows="10"
+                    id="jsonResult"
+                    placeholder="JSON result"
+                    value={jsonData}
+                    readOnly
+                ></textarea>
+                <button className="btn btn-secondary mt-3" onClick={copyToClipboard}>Copy to Clipboard</button>
+            </div>
+        </>
     );
 };
 
