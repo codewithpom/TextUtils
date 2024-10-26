@@ -1,70 +1,133 @@
-# Getting Started with Create React App
+# TxtUtils
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TxtUtils is a collection of text manipulation tools designed to make working with text easier and more efficient. The tools are built using modern web technologies and provide a user-friendly interface for various text-related tasks.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Case Changer: Convert text to different cases (uppercase, lowercase, sentence case, alternating case).
+- Reading Time Calculator: Estimate the time required to read a given piece of text.
+- Text Length Calculator: Count the number of characters and words in your text.
+- Text Splitter: Break down your text into smaller parts based on a specified delimiter.
+- Email and URL Extractor: Find and extract all email addresses and URLs from your text.
+- Markdown Converter: Convert markdown syntax into plain text.
+- Text to Speech Converter: Convert written text into spoken words.
+- QR Code Generator: Create a QR code from your input.
+- Text Translator: Convert text from one language to another.
+- Emoji Remover: Remove all emojis from your text.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Prerequisites
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Node.js (v14 or higher)
+- npm (v6 or higher) or yarn (v1.22 or higher)
 
-### `npm test`
+### Steps
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/codewithpom/TextUtils.git
+   cd TextUtils
+   ```
 
-### `npm run build`
+2. Install dependencies:
+   ```sh
+   npm install
+   # or
+   yarn install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Start the development server:
+   ```sh
+   npm start
+   # or
+   yarn start
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Open your browser and navigate to `http://localhost:3000` to view the application.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage Examples
 
-### `npm run eject`
+### Case Changer
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Navigate to the Case Changer tool.
+2. Enter the text you want to convert.
+3. Select the desired case conversion (uppercase, lowercase, sentence case, alternating case).
+4. View the converted text and copy it to your clipboard.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Reading Time Calculator
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. Navigate to the Reading Time Calculator tool.
+2. Enter the text you want to analyze.
+3. Adjust the Words Per Minute (WPM) slider to match your reading speed.
+4. View the estimated reading time.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Text Length Calculator
 
-## Learn More
+1. Navigate to the Text Length Calculator tool.
+2. Enter the text you want to analyze.
+3. View the number of characters and words in your text.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Text Splitter
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Navigate to the Text Splitter tool.
+2. Enter the text you want to split.
+3. Select the existing delimiter and the new delimiter.
+4. View the split text and copy it to your clipboard.
 
-### Code Splitting
+### Email and URL Extractor
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Navigate to the Email and URL Extractor tool.
+2. Enter the text you want to analyze.
+3. Select whether you want to extract emails or URLs.
+4. View the extracted emails or URLs and copy them to your clipboard.
 
-### Analyzing the Bundle Size
+### Markdown Converter
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Navigate to the Markdown Converter tool.
+2. Enter the markdown text you want to convert.
+3. View the converted plain text and copy it to your clipboard.
 
-### Making a Progressive Web App
+### Text to Speech Converter
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Navigate to the Text to Speech Converter tool.
+2. Enter the text you want to convert to speech.
+3. Select the desired voice.
+4. Click the "Speak" button to hear the text spoken aloud.
 
-### Advanced Configuration
+### QR Code Generator
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Navigate to the QR Code Generator tool.
+2. Enter the text or URL you want to convert to a QR code.
+3. View the generated QR code and download it as an image.
 
-### Deployment
+### Text Translator
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Navigate to the Text Translator tool.
+2. Enter the text you want to translate.
+3. Select the target language.
+4. View the translated text and copy it to your clipboard.
 
-### `npm run build` fails to minify
+### Emoji Remover
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Navigate to the Emoji Remover tool.
+2. Enter the text you want to analyze.
+3. Click the "Remove Emojis" button.
+4. View the text without emojis and copy it to your clipboard.
+
+## Contribution Guidelines
+
+We welcome contributions to TxtUtils! To contribute, please follow these guidelines:
+
+1. Fork the repository and create a new branch for your feature or bugfix.
+2. Write clear and concise commit messages.
+3. Ensure your code follows the project's coding standards and passes all tests.
+4. Submit a pull request with a detailed description of your changes.
+
+## Code of Conduct
+
+We are committed to fostering a welcoming and inclusive community. Please read and adhere to our [Code of Conduct](docs/CODE_OF_CONDUCT.md) when participating in this project.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
