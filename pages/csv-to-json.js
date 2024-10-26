@@ -9,7 +9,7 @@ const CsvToJson = () => {
     };
 
     const convertCsvToJson = () => {
-        const lines = csvData.split('\n');
+        const lines = csvData.split('\n').filter(line => line.trim() !== '');
         const headers = lines[0].split(',');
         const result = lines.slice(1).map(line => {
             const values = line.split(',');
