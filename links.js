@@ -57,6 +57,11 @@ let props = {
             'text': 'Text Size Calculator',
             'link': '/text-size-calc',
             'description': 'The text size calculator estimates the size of your text in bytes. It can be used to check the size of text documents or to estimate the size of a website.'
+        },
+        {
+            'text': 'CSV to JSON',
+            'link': '/csv-to-json',
+            'description': 'The CSV to JSON converter allows you to convert CSV data into JSON format. This tool is useful for data transformation and integration with web applications.'
         }
     ]
 }
