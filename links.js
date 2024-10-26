@@ -67,6 +67,16 @@ let props = {
             'text': 'JSON to CSV',
             'link': '/json-to-csv',
             'description': 'The JSON to CSV converter allows you to convert JSON data into CSV format. This tool is useful for data transformation and integration with web applications.'
+        },
+        {
+            'text': 'JSON to XML',
+            'link': '/json-to-xml',
+            'description': 'The JSON to XML converter allows you to convert JSON data into XML format. This tool is useful for data transformation and integration with web applications.'
+        },
+        {
+            'text': 'XML to JSON',
+            'link': '/xml-to-json',
+            'description': 'The XML to JSON converter allows you to convert XML data into JSON format. This tool is useful for data transformation and integration with web applications.'
         }
     ]
 }
