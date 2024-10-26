@@ -3,9 +3,35 @@ import React, { useState, useEffect } from 'react';
 const CsvToJson = () => {
     const [csvData, setCsvData] = useState('');
     const [jsonData, setJsonData] = useState('');
+    const [file, setFile] = useState(null);
+    const [url, setUrl] = useState('');
 
     const handleCsvChange = (event) => {
         setCsvData(event.target.value);
+    };
+
+    const handleFileChange = (event) => {
+        const file = event.target.files[0];
+        setFile(file);
+        const reader = new FileReader();
+        reader.onload = (e) => {
+            setCsvData(e.target.result);
+        };
+        reader.readAsText(file);
+    };
+
+    const handleUrlChange = (event) => {
+        setUrl(event.target.value);
+    };
+
+    const fetchDataFromUrl = async () => {
+        try {
+            const response = await fetch(url);
+            const data = await response.text();
+            setCsvData(data);
+        } catch (error) {
+            console.error('Error fetching data from URL:', error);
+        }
     };
 
     const convertCsvToJson = () => {
@@ -23,7 +49,9 @@ const CsvToJson = () => {
     };
 
     const copyToClipboard = () => {
-        navigator.clipboard.writeText(jsonData);
+        const textarea = document.getElementById('jsonResult');
+        textarea.select();
+        document.execCommand('copy');
     };
 
     return (
@@ -36,10 +64,25 @@ const CsvToJson = () => {
                 value={csvData}
                 onChange={handleCsvChange}
             ></textarea>
+            <input
+                type="file"
+                className="form-control mt-3"
+                accept=".csv"
+                onChange={handleFileChange}
+            />
+            <input
+                type="text"
+                className="form-control mt-3"
+                placeholder="Enter URL to fetch CSV data"
+                value={url}
+                onChange={handleUrlChange}
+            />
+            <button className="btn btn-primary mt-3" onClick={fetchDataFromUrl}>Fetch Data from URL</button>
             <button className="btn btn-primary mt-3" onClick={convertCsvToJson}>Convert</button>
             <textarea
                 className="form-control mt-3"
                 rows="10"
+                id="jsonResult"
                 placeholder="JSON result"
                 value={jsonData}
                 readOnly
