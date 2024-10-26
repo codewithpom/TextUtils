@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Head from 'next/head';
 
-const CsvToJson = () => {
-    const [csvData, setCsvData] = useState('');
+const JsonToCsv = () => {
     const [jsonData, setJsonData] = useState('');
+    const [csvData, setCsvData] = useState('');
     const [file, setFile] = useState(null);
     const [url, setUrl] = useState('');
 
-    const handleCsvChange = (event) => {
-        setCsvData(event.target.value);
+    const handleJsonChange = (event) => {
+        setJsonData(event.target.value);
     };
 
     const handleFileChange = (event) => {
@@ -16,7 +16,7 @@ const CsvToJson = () => {
         setFile(file);
         const reader = new FileReader();
         reader.onload = (e) => {
-            setCsvData(e.target.result);
+            setJsonData(e.target.result);
         };
         reader.readAsText(file);
     };
@@ -35,38 +35,34 @@ const CsvToJson = () => {
                 body: JSON.stringify({ url })
             });
             const data = await response.json();
-            setCsvData(data.content);
+            setJsonData(data.content);
         } catch (error) {
             console.error('Error fetching data from URL:', error);
         }
     };
 
-    const convertCsvToJson = () => {
-        const lines = csvData.split('\n').filter(line => line.trim() !== '');
-        const headers = lines[0].split(',');
-        const result = lines.slice(1).map(line => {
-            const values = line.split(',');
-            const obj = {};
-            headers.forEach((header, index) => {
-                obj[header] = values[index];
-            });
-            return obj;
-        });
-        setJsonData(JSON.stringify(result, null, 2));
+    const convertJsonToCsv = () => {
+        const json = JSON.parse(jsonData);
+        const headers = Object.keys(json[0]);
+        const csv = [
+            headers.join(','), 
+            ...json.map(row => headers.map(field => row[field]).join(','))
+        ].join('\n');
+        setCsvData(csv);
     };
 
     const copyToClipboard = () => {
-        const textarea = document.getElementById('jsonResult');
+        const textarea = document.getElementById('csvResult');
         textarea.select();
         document.execCommand('copy');
     };
 
     const saveToFile = () => {
-        const blob = new Blob([jsonData], { type: 'application/json' });
+        const blob = new Blob([csvData], { type: 'text/csv' });
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
-        a.download = 'output.json';
+        a.download = 'output.csv';
         a.click();
         URL.revokeObjectURL(url);
     };
@@ -74,45 +70,45 @@ const CsvToJson = () => {
     return (
         <>
             <Head>
-                <title>CSV to JSON Converter</title>
-                <meta name="description" content="Convert CSV data to JSON format easily and quickly." />
-                <meta name="keywords" content="CSV to JSON, CSV converter, JSON converter" />
+                <title>JSON to CSV Converter</title>
+                <meta name="description" content="Convert JSON data to CSV format easily and quickly." />
+                <meta name="keywords" content="JSON to CSV, JSON converter, CSV converter" />
                 <meta name="author" content="Padmashree Jha" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <meta property="og:title" content="CSV to JSON Converter" />
-                <meta property="og:description" content="Convert CSV data to JSON format easily and quickly." />
+                <meta property="og:title" content="JSON to CSV Converter" />
+                <meta property="og:description" content="Convert JSON data to CSV format easily and quickly." />
                 <meta property="og:type" content="website" />
             </Head>
             <div className="container">
-                <h1>CSV to JSON Converter</h1>
+                <h1>JSON to CSV Converter</h1>
                 <textarea
                     className="form-control"
                     rows="10"
-                    placeholder="Enter CSV data here"
-                    value={csvData}
-                    onChange={handleCsvChange}
+                    placeholder="Enter JSON data here"
+                    value={jsonData}
+                    onChange={handleJsonChange}
                 ></textarea>
                 <input
                     type="file"
                     className="form-control mt-3"
-                    accept=".csv"
+                    accept=".json"
                     onChange={handleFileChange}
                 />
                 <input
                     type="text"
                     className="form-control mt-3"
-                    placeholder="Enter URL to fetch CSV data"
+                    placeholder="Enter URL to fetch JSON data"
                     value={url}
                     onChange={handleUrlChange}
                 />
                 <button className="btn btn-primary mt-3" onClick={fetchDataFromUrl}>Fetch Data from URL</button>
-                <button className="btn btn-primary mt-3" onClick={convertCsvToJson}>Convert</button>
+                <button className="btn btn-primary mt-3" onClick={convertJsonToCsv}>Convert</button>
                 <textarea
                     className="form-control mt-3"
                     rows="10"
-                    id="jsonResult"
-                    placeholder="JSON result"
-                    value={jsonData}
+                    id="csvResult"
+                    placeholder="CSV result"
+                    value={csvData}
                     readOnly
                 ></textarea>
                 <button className="btn btn-secondary mt-3" onClick={copyToClipboard}>Copy to Clipboard</button>
@@ -122,4 +118,4 @@ const CsvToJson = () => {
     );
 };
 
-export default CsvToJson;
+export default JsonToCsv;
