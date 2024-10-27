@@ -77,6 +77,11 @@ let props = {
             'text': 'XML to JSON',
             'link': '/xml-to-json',
             'description': 'The XML to JSON converter allows you to convert XML data into JSON format. This tool is useful for data transformation and integration with web applications.'
+        },
+        {
+            'text': 'JSON Minifier',
+            'link': '/json-minifier',
+            'description': 'The JSON minifier tool allows you to minify JSON data. This tool is useful for reducing the size of JSON files and improving the performance of web applications.'
         }
     ]
 }
