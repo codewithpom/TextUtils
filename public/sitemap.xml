@@ -4,51 +4,104 @@
         xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9
         https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+        <loc>https://www.txtutils.net</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
         
                 <url>
-                    <loc>https://txtutils.vercel.app/case-changer</loc>
+                    <loc>https://www.txtutils.net/case-changer</loc>
                     <changefreq>weekly</changefreq>
                     <priority>0.9</priority>
                 </url>
             
                 <url>
-                    <loc>https://txtutils.vercel.app/reading-time-calc</loc>
+                    <loc>https://www.txtutils.net/reading-time-calc</loc>
                     <changefreq>weekly</changefreq>
                     <priority>0.9</priority>
                 </url>
             
                 <url>
-                    <loc>https://txtutils.vercel.app/text-length-calc</loc>
+                    <loc>https://www.txtutils.net/text-length-calc</loc>
                     <changefreq>weekly</changefreq>
                     <priority>0.9</priority>
                 </url>
             
                 <url>
-                    <loc>https://txtutils.vercel.app/text-splitter</loc>
+                    <loc>https://www.txtutils.net/text-splitter</loc>
                     <changefreq>weekly</changefreq>
                     <priority>0.9</priority>
                 </url>
             
                 <url>
-                    <loc>https://txtutils.vercel.app/extractor</loc>
+                    <loc>https://www.txtutils.net/extractor</loc>
                     <changefreq>weekly</changefreq>
                     <priority>0.9</priority>
                 </url>
             
                 <url>
-                    <loc>https://txtutils.vercel.app/markdown-to-text</loc>
+                    <loc>https://www.txtutils.net/markdown-to-text</loc>
                     <changefreq>weekly</changefreq>
                     <priority>0.9</priority>
                 </url>
             
                 <url>
-                    <loc>https://txtutils.vercel.app/tts</loc>
+                    <loc>https://www.txtutils.net/tts</loc>
                     <changefreq>weekly</changefreq>
                     <priority>0.9</priority>
                 </url>
             
                 <url>
-                    <loc>https://txtutils.vercel.app/qr-generator</loc>
+                    <loc>https://www.txtutils.net/qr-generator</loc>
+                    <changefreq>weekly</changefreq>
+                    <priority>0.9</priority>
+                </url>
+            
+                <url>
+                    <loc>https://www.txtutils.net/trans</loc>
+                    <changefreq>weekly</changefreq>
+                    <priority>0.9</priority>
+                </url>
+            
+                <url>
+                    <loc>https://www.txtutils.net/emoji-remover</loc>
+                    <changefreq>weekly</changefreq>
+                    <priority>0.9</priority>
+                </url>
+            
+                <url>
+                    <loc>https://www.txtutils.net/text-size-calc</loc>
+                    <changefreq>weekly</changefreq>
+                    <priority>0.9</priority>
+                </url>
+            
+                <url>
+                    <loc>https://www.txtutils.net/csv-to-json</loc>
+                    <changefreq>weekly</changefreq>
+                    <priority>0.9</priority>
+                </url>
+            
+                <url>
+                    <loc>https://www.txtutils.net/json-to-csv</loc>
+                    <changefreq>weekly</changefreq>
+                    <priority>0.9</priority>
+                </url>
+            
+                <url>
+                    <loc>https://www.txtutils.net/json-to-xml</loc>
+                    <changefreq>weekly</changefreq>
+                    <priority>0.9</priority>
+                </url>
+            
+                <url>
+                    <loc>https://www.txtutils.net/xml-to-json</loc>
+                    <changefreq>weekly</changefreq>
+                    <priority>0.9</priority>
+                </url>
+            
+                <url>
+                    <loc>https://www.txtutils.net/json-minifier</loc>
                     <changefreq>weekly</changefreq>
                     <priority>0.9</priority>
                 </url>
