@@ -44,12 +44,21 @@ const JsonMinifier = () => {
         }
     };
 
+    const formatSize = (size) => {
+        if (size < 1024) return `${size} bytes`;
+        else if (size < 1024 * 1024) return `${(size / 1024).toFixed(2)} KB`;
+        else if (size < 1024 * 1024 * 1024) return `${(size / (1024 * 1024)).toFixed(2)} MB`;
+        else return `${(size / (1024 * 1024 * 1024)).toFixed(2)} GB`;
+    };
+
     const minifyJson = () => {
         try {
             const minified = JSON.stringify(JSON.parse(jsonData));
             setMinifiedJsonData(minified);
-            setOriginalSize(new Blob([jsonData]).size);
-            setMinifiedSize(new Blob([minified]).size);
+            const originalSize = new Blob([jsonData]).size;
+            const minifiedSize = new Blob([minified]).size;
+            setOriginalSize(originalSize);
+            setMinifiedSize(minifiedSize);
             setReductionPercentage(((originalSize - minifiedSize) / originalSize) * 100);
         } catch (error) {
             console.error('Error minifying JSON:', error);
@@ -119,8 +128,8 @@ const JsonMinifier = () => {
                 <button className="btn btn-secondary mt-3" onClick={copyToClipboard}>Copy to Clipboard</button>
                 <button className="btn btn-secondary mt-3" onClick={saveToFile}>Save as File</button>
                 <div className="mt-3">
-                    <p>Original Size: {originalSize} bytes</p>
-                    <p>Minified Size: {minifiedSize} bytes</p>
+                    <p>Original Size: {formatSize(originalSize)}</p>
+                    <p>Minified Size: {formatSize(minifiedSize)}</p>
                     <p style={{ color: 'green' }}>Reduction Percentage: {reductionPercentage.toFixed(2)}%</p>
                 </div>
             </div>
