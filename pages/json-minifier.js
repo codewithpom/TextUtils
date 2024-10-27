@@ -6,6 +6,9 @@ const JsonMinifier = () => {
     const [minifiedJsonData, setMinifiedJsonData] = useState('');
     const [file, setFile] = useState(null);
     const [url, setUrl] = useState('');
+    const [originalSize, setOriginalSize] = useState(0);
+    const [minifiedSize, setMinifiedSize] = useState(0);
+    const [reductionPercentage, setReductionPercentage] = useState(0);
 
     const handleJsonChange = (event) => {
         setJsonData(event.target.value);
@@ -45,6 +48,9 @@ const JsonMinifier = () => {
         try {
             const minified = JSON.stringify(JSON.parse(jsonData));
             setMinifiedJsonData(minified);
+            setOriginalSize(new Blob([jsonData]).size);
+            setMinifiedSize(new Blob([minified]).size);
+            setReductionPercentage(((originalSize - minifiedSize) / originalSize) * 100);
         } catch (error) {
             console.error('Error minifying JSON:', error);
         }
@@ -112,6 +118,11 @@ const JsonMinifier = () => {
                 ></textarea>
                 <button className="btn btn-secondary mt-3" onClick={copyToClipboard}>Copy to Clipboard</button>
                 <button className="btn btn-secondary mt-3" onClick={saveToFile}>Save as File</button>
+                <div className="mt-3">
+                    <p>Original Size: {originalSize} bytes</p>
+                    <p>Minified Size: {minifiedSize} bytes</p>
+                    <p style={{ color: 'green' }}>Reduction Percentage: {reductionPercentage.toFixed(2)}%</p>
+                </div>
             </div>
         </>
     );
