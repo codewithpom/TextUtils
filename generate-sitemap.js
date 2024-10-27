@@ -1,13 +1,8 @@
-// import links from '../links'
-// import fs from 'fs'
-// import path from 'path'
-
 const links = require('./links')
 const fs = require('fs')
 const path = require('path')
 
 const generateSitemap = () => {
-    // console.log(links)
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <urlset
         xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
@@ -15,14 +10,14 @@ const generateSitemap = () => {
         xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9
         https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-        <loc>https://txtutils.vercel.app</loc>
+        <loc>https://www.txtutils.net</loc>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
         ${links['pages'].map(({ link }) => {
         return `
                 <url>
-                    <loc>https://txtutils.vercel.app${link}</loc>
+                    <loc>https://www.txtutils.net${link}</loc>
                     <changefreq>weekly</changefreq>
                     <priority>0.9</priority>
                 </url>
