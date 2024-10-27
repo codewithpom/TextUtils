@@ -64,9 +64,11 @@ function App() {
                         </p>
 
                         <Link href={tool.link}>
-                          <button className="btn btn-primary mt-auto">
-                            Try it
-                          </button>
+                          <a>
+                            <button className="btn btn-primary mt-auto">
+                              Try it
+                            </button>
+                          </a>
                         </Link>
                       </div>
                     </div>
