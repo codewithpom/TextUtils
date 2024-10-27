@@ -1,6 +1,5 @@
-// This is a Nxt.js page
-// With bootstrap
-import { useState, useEffect } from 'react';
+import Head from 'next/head';
+import { useState } from 'react';
 import emojiRegex from 'emoji-regex';
 
 function App() {
@@ -15,6 +14,16 @@ function App() {
 
     return (
         <>
+            <Head>
+                <title>Emoji Remover</title>
+                <meta name="description" content="Remove emojis from your text easily!" />
+                <meta name="keywords" content="Emoji Remover, text, emoji, remover" />
+                <meta name="author" content="Padmashree Jha" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <meta property="og:title" content="Emoji Remover" />
+                <meta property="og:description" content="Remove emojis from your text easily!" />
+                <meta property="og:type" content="website" />
+            </Head>
             <div className="container">
                 <div className='text-center'>
                     <h1>Emoji Remover</h1>
