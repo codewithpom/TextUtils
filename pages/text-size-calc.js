@@ -1,37 +1,36 @@
-
-//   const text = "Hello, world!";
-//   console.log(formatBytes(new Blob([text]).size));
-
-
-// This is a Nxt.js page
-// With bootstrap
+import Head from 'next/head';
 import { useState, useEffect } from 'react';
 
 function App() {
     const [textSize, setTextSize] = useState();
     const [text, setText] = useState("");
-    function formatBytes(bytes, decimals = 2) {
 
-      
+    function formatBytes(bytes, decimals = 2) {
         const k = 1024;
         const dm = decimals < 0 ? 0 : decimals;
         const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
-      
         const i = Math.floor(Math.log(bytes) / Math.log(k));
-      
         return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + sizes[i];
-      }
-    // use effect for change in text
+    }
+
     useEffect(() => {
-        // calculate the text size
         const textSize = new Blob([text]).size;
         setTextSize(textSize);
     }, [text]);
 
     return (
         <>
+            <Head>
+                <title>Text Size Calculator</title>
+                <meta name="description" content="Calculate the size of your text in bytes easily!" />
+                <meta name="keywords" content="Text Size Calculator, text, size, bytes" />
+                <meta name="author" content="Padmashree Jha" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <meta property="og:title" content="Text Size Calculator" />
+                <meta property="og:description" content="Calculate the size of your text in bytes easily!" />
+                <meta property="og:type" content="website" />
+            </Head>
             <div className="container">
-
                 <h1>Text Size Calculator</h1>
                 <p>Enter the text below to calculate the size of the text in bytes.</p>
                 <textarea id="text" placeholder="Enter the text here" value={text}
@@ -39,14 +38,11 @@ function App() {
                 ></textarea>
 
                 <p>
-                    {/* conditionally render the text size */}
-                    {
-                        textSize > 0 ?
-                            <span>
-                                The text size is <strong>{formatBytes(textSize)}</strong> bytes.
-                            </span>
-                            :
-                            null
+                    {textSize > 0 ?
+                        <span>
+                            The text size is <strong>{formatBytes(textSize)}</strong> bytes.
+                        </span>
+                        : null
                     }
                 </p>
             </div>
