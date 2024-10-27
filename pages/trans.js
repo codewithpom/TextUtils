@@ -1,5 +1,4 @@
-// This is a Nxt.js page
-// With bootstrap
+import Head from 'next/head';
 import { useState, useEffect } from 'react';
 
 function App() {
@@ -29,10 +28,20 @@ function App() {
 
     return (
         <>
+            <Head>
+                <title>Text Translator</title>
+                <meta name="description" content="Translate your text to different languages easily!" />
+                <meta name="keywords" content="Text Translator, text, translation, languages" />
+                <meta name="author" content="Padmashree Jha" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <meta property="og:title" content="Text Translator" />
+                <meta property="og:description" content="Translate your text to different languages easily!" />
+                <meta property="og:type" content="website" />
+            </Head>
             <div className="container">
                 <div className='text-center'>
                     <h1>Text Translator</h1>
-                    <p>Enter the text and translate it accordingly !</p>
+                    <p>Enter the text and translate it accordingly!</p>
                 </div>
 
                 <label htmlFor='text'>Enter the text:- </label>
@@ -50,34 +59,28 @@ function App() {
                 <textarea id="text" placeholder="Translated Text" value={translatedText}
                     readOnly={true}
                 ></textarea>
-                {/* copy button */}
                 <button onClick={() => {
                     navigator.clipboard.writeText(translatedText);
-                    alert('Text copied to clipboard !')
+                    alert('Text copied to clipboard!')
                 }}>Copy</button>
-
-
             </div>
             <hr></hr>
-            {/* write about it */}
             <div className='text-center'>
-                <h2>How to use it ?</h2>
-                <p>Enter the text in the text area and select the existing delimeter and new delimeter and click on the translate text button to get the translated text.</p>
+                <h2>How to use it?</h2>
+                <p>Enter the text in the text area and select the language to translate it into, then click the "Translate Text" button to get the translated text.</p>
             </div>
             <div className='text-center'>
-                <h2>What does it do ?</h2>
-                <p>It translates the text based on the existing delimeter and joins it with the new delimeter.</p>
+                <h2>What does it do?</h2>
+                <p>It translates the text based on the specified language.</p>
             </div>
             <div className='text-center'>
-                <h2>Why was it made ?</h2>
-                <p>It was made to translate the text based on the delimeter and join it with the new delimeter.</p>
+                <h2>Why was it made?</h2>
+                <p>It was made to provide an easy way to translate text into different languages.</p>
             </div>
-
 
             <style jsx>{`
                 .container {
                     margin: 0 auto;
-                    
                     width: 80%;
                 }
                 h1 {
@@ -90,8 +93,6 @@ function App() {
                     margin-bottom: 1rem;
                     text-align: center;
                 }
-
-
                 textarea {
                     border: 1px solid #ccc;
                     border-radius: 5px;
@@ -109,7 +110,6 @@ function App() {
                     font-size: 1.2rem;
                     margin-bottom: 1rem;
                     padding: 0.5rem 1rem;
-                    
                 }
                 button:hover {
                     background-color: #0060d3;
