@@ -97,6 +97,11 @@ let props = {
             'text': 'Upside Down Text Generator',
             'link': '/upside-down-text',
             'description': 'The upside down text generator tool allows you to flip your text upside down. This tool is useful for creating fun and unique text for social media posts, messages, or any other text documents.'
+        },
+        {
+            'text': 'Word to PDF Converter',
+            'link': '/word-to-pdf',
+            'description': 'The Word to PDF converter allows you to convert Word files to PDF format. This tool is useful for creating PDF documents from Word files.'
         }
     ]
 }
