@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
-import UglifyJS from 'uglify-js';
+import { minify } from 'terser';
 
 const JsMinifier = () => {
     const [jsData, setJsData] = useState('');
@@ -52,9 +52,10 @@ const JsMinifier = () => {
         else return `${(size / (1024 * 1024 * 1024)).toFixed(2)} GB`;
     };
 
-    const minifyJs = () => {
+    const minifyJs = async () => {
         try {
-            const minified = UglifyJS.minify(jsData).code;
+            const result = await minify(jsData);
+            const minified = result.code;
             setMinifiedJsData(minified);
             const originalSize = new Blob([jsData]).size;
             const minifiedSize = new Blob([minified]).size;
