@@ -106,5 +106,11 @@
                     <priority>0.9</priority>
                 </url>
             
+                <url>
+                    <loc>https://www.txtutils.net/html-minifier</loc>
+                    <changefreq>weekly</changefreq>
+                    <priority>0.9</priority>
+                </url>
+            
     </urlset>
     
