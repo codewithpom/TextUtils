@@ -82,6 +82,11 @@ let props = {
             'text': 'JSON Minifier',
             'link': '/json-minifier',
             'description': 'The JSON minifier tool allows you to minify JSON data. This tool is useful for reducing the size of JSON files and improving the performance of web applications.'
+        },
+        {
+            'text': 'HTML Minifier',
+            'link': '/html-minifier',
+            'description': 'The HTML minifier tool allows you to minify HTML data. This tool is useful for reducing the size of HTML files and improving the performance of web applications.'
         }
     ]
 }
