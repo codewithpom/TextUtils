@@ -10,6 +10,7 @@ const CssMinifier = () => {
     const [originalSize, setOriginalSize] = useState(0);
     const [minifiedSize, setMinifiedSize] = useState(0);
     const [reductionPercentage, setReductionPercentage] = useState(0);
+    const [error, setError] = useState('');
 
     const handleCssChange = (event) => {
         setCssData(event.target.value);
@@ -62,8 +63,10 @@ const CssMinifier = () => {
             setOriginalSize(originalSize);
             setMinifiedSize(minifiedSize);
             setReductionPercentage(((originalSize - minifiedSize) / originalSize) * 100);
+            setError('');
         } catch (error) {
             console.error('Error minifying CSS:', error);
+            setError('Error minifying CSS: ' + error.message);
         }
     };
 
@@ -133,6 +136,7 @@ const CssMinifier = () => {
                     <p>Original Size: {formatSize(originalSize)}</p>
                     <p>Minified Size: {formatSize(minifiedSize)}</p>
                     <p style={{ color: 'green' }}>Reduction Percentage: {reductionPercentage.toFixed(2)}%</p>
+                    {error && <p style={{ color: 'red' }}>{error}</p>}
                 </div>
             </div>
         </>
