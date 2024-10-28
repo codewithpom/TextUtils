@@ -92,6 +92,11 @@ let props = {
             'text': 'JavaScript Minifier',
             'link': '/js-minifier',
             'description': 'The JavaScript minifier tool allows you to minify JavaScript data. This tool is useful for reducing the size of JavaScript files and improving the performance of web applications.'
+        },
+        {
+            'text': 'Upside Down Text Generator',
+            'link': '/upside-down-text',
+            'description': 'The upside down text generator tool allows you to flip your text upside down. This tool is useful for creating fun and unique text for social media posts, messages, or any other text documents.'
         }
     ]
 }
