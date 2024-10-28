@@ -24,7 +24,7 @@ function MyApp({ Component, pageProps }) {
             
             <Head>
             <meta name="google-adsense-account" content="ca-pub-2735251147722172" />
-                
+                <meta name="yandex-verification" content="2fbda7b2014931f2" />
             <meta name="msvalidate.01" content="38099E1AE93A9BC0C89D053978747CF1" />
                 <Script
                     strategy="lazyOnload"
