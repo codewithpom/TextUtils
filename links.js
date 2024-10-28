@@ -87,6 +87,11 @@ let props = {
             'text': 'HTML Minifier',
             'link': '/html-minifier',
             'description': 'The HTML minifier tool allows you to minify HTML data. This tool is useful for reducing the size of HTML files and improving the performance of web applications.'
+        },
+        {
+            'text': 'JavaScript Minifier',
+            'link': '/js-minifier',
+            'description': 'The JavaScript minifier tool allows you to minify JavaScript data. This tool is useful for reducing the size of JavaScript files and improving the performance of web applications.'
         }
     ]
 }
