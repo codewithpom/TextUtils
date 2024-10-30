@@ -43,15 +43,7 @@ function MyApp({ Component, pageProps }) {
             
                 <Script src="https://www.googletagmanager.com/gtag/js?id=G-HWP2J64Z0N" />
                 
-                <Script id="google-analytics">
-                    {`
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-            
-                    gtag('config', 'GA_MEASUREMENT_ID');
-                    `}
-                </Script>
+                
                 <Script id="clarity-analytics">
                     {`
                     
