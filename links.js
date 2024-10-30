@@ -97,6 +97,11 @@ let props = {
             'text': 'Upside Down Text Generator',
             'link': '/upside-down-text',
             'description': 'The upside down text generator tool allows you to flip your text upside down. This tool is useful for creating fun and unique text for social media posts, messages, or any other text documents.'
+        },
+        {
+            'text': 'PDF Merge Tool',
+            'link': '/pdf-merge',
+            'description': 'The PDF merge tool allows you to drag and rank multiple PDFs and merge them into a single PDF. This tool is useful for combining multiple PDF documents into one.'
         }
     ]
 }
