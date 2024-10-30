@@ -8,6 +8,7 @@
     "emoji-regex": "^10.4.0",
     "marked": "^11.1.0",
     "next": "^12.3.1",
+    "nextjs-google-adsense": "^1.0.0",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^9.3.0",
     "prop-types": "^15.8.1",
