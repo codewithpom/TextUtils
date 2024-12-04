@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { PDFDocument } from 'pdf-lib';
 import { DndProvider, useDrag, useDrop } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
@@ -24,10 +24,34 @@ const DraggablePDF = ({ pdf, index, movePDF, removePDF }) => {
     },
   });
 
+  const [pdfPreviewUrl, setPdfPreviewUrl] = useState(null);
+
+  useEffect(() => {
+    const loadPdfPreview = async () => {
+      const arrayBuffer = await pdf.arrayBuffer();
+      const pdfDoc = await PDFDocument.load(arrayBuffer);
+      const firstPage = pdfDoc.getPage(0);
+      const viewport = firstPage.getViewport({ scale: 1 });
+      const canvas = document.createElement('canvas');
+      canvas.width = viewport.width;
+      canvas.height = viewport.height;
+      const context = canvas.getContext('2d');
+      const renderContext = {
+        canvasContext: context,
+        viewport: viewport,
+      };
+      await firstPage.render(renderContext).promise;
+      setPdfPreviewUrl(canvas.toDataURL());
+    };
+
+    loadPdfPreview();
+  }, [pdf]);
+
   return (
     <div ref={(node) => ref(drop(node))} className="pdf-item">
       <div className="card" style={{ margin: '10px', cursor: 'grab' }}>
         <div className="card-body d-flex justify-content-between align-items-center">
+          {pdfPreviewUrl && <img src={pdfPreviewUrl} alt="PDF Preview" style={{ width: '50px', height: '70px', marginRight: '10px' }} />}
           {pdf.name}
           <button className="btn btn-danger btn-sm" onClick={() => removePDF(index)}>Remove</button>
         </div>
@@ -92,8 +116,11 @@ const PDFMerge = () => {
         <h1>PDF Merge Tool</h1>
         <input type="file" accept="application/pdf" multiple onChange={handleFileChange} />
       </div>
+      <div className="upload-destination" style={{ border: '2px dashed #ccc', padding: '20px', marginBottom: '20px' }}>
+        Drag and drop your PDFs here
+      </div>
       <DndProvider backend={HTML5Backend}>
-        <div className="pdf-list">
+        <div className="pdf-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '10px' }}>
           {pdfs.map((pdf, index) => (
             <DraggablePDF key={index} pdf={pdf} index={index} movePDF={movePDF} removePDF={removePDF} />
           ))}
