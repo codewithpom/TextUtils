@@ -62,7 +62,7 @@ function App() {
         <>
             <Head>
                 <title>Case Changer</title>
-                <meta name="description" content="Case changer for text in almost all languages!" />
+                <meta name="description" content="A free futuristic case changer tool without glitches on TxtUtils. Change the case of your text within uppercase, lowercase, capitalize and much more without any hassle." />
                 <meta name="keywords" content="Case changer,text,case converter" />
                 <meta name="author" content="Padmashree Jha" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />

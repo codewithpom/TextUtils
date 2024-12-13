@@ -24,7 +24,7 @@ function App() {
             </Head>
             <SEO 
                 title={'Text Splitter'}
-                description={'Split your text as per your current delimeter and new delimeter and as you want just with a click !'}
+                description={'A free and futuristic text splitting and separator tool from TxtUtils. This tool helps you to split text by existing separator and change to a new one.'}
                 keywords={[
                     'text splitter',
                     'text tools',
