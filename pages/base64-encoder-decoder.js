@@ -2,20 +2,23 @@ import Head from 'next/head';
 import { useState, useEffect } from 'react';
 
 const Base64EncoderDecoder = () => {
-    const [inputText, setInputText] = useState('');
     const [encodedText, setEncodedText] = useState('');
     const [decodedText, setDecodedText] = useState('');
 
-    const handleInputChange = (event) => {
-        setInputText(event.target.value);
+    const handleEncodedTextChange = (event) => {
+        const encoded = event.target.value;
+        setEncodedText(encoded);
+        try {
+            setDecodedText(atob(encoded));
+        } catch (error) {
+            setDecodedText('Invalid base64 string');
+        }
     };
 
-    const encodeBase64 = () => {
-        setEncodedText(btoa(inputText));
-    };
-
-    const decodeBase64 = () => {
-        setDecodedText(atob(inputText));
+    const handleDecodedTextChange = (event) => {
+        const decoded = event.target.value;
+        setDecodedText(decoded);
+        setEncodedText(btoa(decoded));
     };
 
     return (
@@ -35,23 +38,25 @@ const Base64EncoderDecoder = () => {
                 <p>Enter the text below to encode or decode it using base64.</p>
                 <div className="row">
                     <div className="col-md-6">
+                        <label htmlFor="decodedText">Decoded Text</label>
                         <textarea
                             className="form-control"
+                            id="decodedText"
                             rows="10"
-                            placeholder="Enter text here"
-                            value={inputText}
-                            onChange={handleInputChange}
+                            placeholder="Enter text to encode"
+                            value={decodedText}
+                            onChange={handleDecodedTextChange}
                         ></textarea>
-                        <button className="btn btn-primary mt-3" onClick={encodeBase64}>Encode</button>
-                        <button className="btn btn-primary mt-3" onClick={decodeBase64}>Decode</button>
                     </div>
                     <div className="col-md-6">
+                        <label htmlFor="encodedText">Encoded Text</label>
                         <textarea
                             className="form-control"
+                            id="encodedText"
                             rows="10"
-                            placeholder="Encoded/Decoded result"
-                            value={encodedText || decodedText}
-                            readOnly
+                            placeholder="Enter text to decode"
+                            value={encodedText}
+                            onChange={handleEncodedTextChange}
                         ></textarea>
                     </div>
                 </div>
