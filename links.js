@@ -102,6 +102,11 @@ let props = {
             'text': 'PDF Merge Tool',
             'link': '/pdf-merge',
             'description': 'The PDF merge tool allows you to drag and rank multiple PDFs and merge them into a single PDF. This tool is useful for combining multiple PDF documents into one.'
+        },
+        {
+            'text': 'Base64 Encoder/Decoder',
+            'link': '/base64-encoder-decoder',
+            'description': 'The Base64 Encoder/Decoder tool allows you to encode and decode base64 strings. This tool is useful for encoding binary data into a text format and decoding base64 strings back into their original binary form.'
         }
     ]
 }
