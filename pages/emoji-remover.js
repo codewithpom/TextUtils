@@ -16,7 +16,7 @@ function App() {
         <>
             <Head>
                 <title>Emoji Remover</title>
-                <meta name="description" content="Remove emojis from your text easily!" />
+                <meta name="description" content="Remove emojis from your text easily with our free online Emoji Remover tool. Simply paste your text and click the button to remove all emojis." />
                 <meta name="keywords" content="Emoji Remover, text, emoji, remover" />
                 <meta name="author" content="Padmashree Jha" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />

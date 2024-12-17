@@ -112,7 +112,7 @@ function UpsideDownText() {
         <>
             <Head>
                 <title>Upside Down Text Generator</title>
-                <meta name="description" content="Generate upside down text easily!" />
+                <meta name="description" content="Generate upside down text easily and have fun with your friends by sharing the flipped text on social media or messaging apps." />
                 <meta name="keywords" content="Upside Down Text Generator, text, upside down, generator" />
                 <meta name="author" content="Padmashree Jha" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />

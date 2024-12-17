@@ -85,7 +85,7 @@ const JsonMinifier = () => {
         <>
             <Head>
                 <title>JSON Minifier</title>
-                <meta name="description" content="Minify JSON data easily and quickly." />
+                <meta name="description" content="Minify JSON data easily and quickly with our user-friendly online tool. Upload your JSON file or paste the data to get the minified output instantly." />
                 <meta name="keywords" content="JSON minifier, JSON minify, minify JSON" />
                 <meta name="author" content="Padmashree Jha" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />

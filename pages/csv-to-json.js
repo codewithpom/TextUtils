@@ -75,7 +75,7 @@ const CsvToJson = () => {
         <>
             <Head>
                 <title>CSV to JSON Converter</title>
-                <meta name="description" content="Convert CSV data to JSON format easily and quickly." />
+                <meta name="description" content="Convert CSV data to JSON format easily and quickly with our user-friendly online tool. Upload your CSV file or paste the data to get the JSON output instantly." />
                 <meta name="keywords" content="CSV to JSON, CSV converter, JSON converter" />
                 <meta name="author" content="Padmashree Jha" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />

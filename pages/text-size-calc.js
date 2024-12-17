@@ -22,7 +22,7 @@ function App() {
         <>
             <Head>
                 <title>Text Size Calculator</title>
-                <meta name="description" content="Calculate the size of your text in bytes easily!" />
+                <meta name="description" content="Calculate the size of your text in bytes easily with our user-friendly online tool. Enter your text and get the size in bytes instantly." />
                 <meta name="keywords" content="Text Size Calculator, text, size, bytes" />
                 <meta name="author" content="Padmashree Jha" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />

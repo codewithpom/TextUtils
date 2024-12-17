@@ -64,7 +64,7 @@ export default function TextToSpeech() {
         <>
             <Head>
                 <title>Text to Speech</title>
-                <meta name="description" content="Convert text to speech" />
+                <meta name="description" content="Convert text to speech effortlessly with our Text to Speech tool. Choose from various voices and listen to your text in seconds." />
                 <meta name="keywords" content="text to speech, speech synthesis, convert text to speech" />
                 <meta name="author" content="Padmashree Jha" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -161,5 +161,4 @@ export default function TextToSpeech() {
         </>
     );
 }
-
 

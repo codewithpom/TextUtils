@@ -1,5 +1,3 @@
-// This is a Nxt.js page
-// With bootstrap
 import { useState, useEffect } from 'react';
 import SEO from '../components/SEO'
 
@@ -35,7 +33,7 @@ function App() {
         <>
             <SEO 
                 title={'Email and URL extractor'}
-                description={'Extract Emails and URLs from your text with a single click and copy the results for free !'}
+                description={'Extract Emails and URLs from your text with a single click and copy the results for free with our user-friendly online tool.'}
                 keywords={[
                     'email',
                     'text tools',
