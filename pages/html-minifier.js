@@ -85,7 +85,7 @@ const HtmlMinifier = () => {
         <>
             <Head>
                 <title>HTML Minifier</title>
-                <meta name="description" content="Minify HTML data easily and quickly." />
+                <meta name="description" content="Minify HTML data easily and quickly with our user-friendly online tool. Upload your HTML file or paste the data to get the minified output instantly." />
                 <meta name="keywords" content="HTML minifier, HTML minify, minify HTML" />
                 <meta name="author" content="Padmashree Jha" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />

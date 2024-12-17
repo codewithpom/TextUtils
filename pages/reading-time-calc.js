@@ -1,4 +1,3 @@
-// Note: This is a Next.js page
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import SEO from '../components/SEO'
@@ -27,7 +26,7 @@ function App() {
         <>
             <SEO 
                 title={'Reading Time Calculator'}
-                description={'Calculate the reading time of your text with custom Words Per Minute Speed'}
+                description={'Calculate the reading time of your text with custom Words Per Minute Speed. Enter your text and get the estimated reading time instantly.'}
                 keywords={[
                     'reading',
                     'text tools',

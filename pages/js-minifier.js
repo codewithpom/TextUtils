@@ -87,7 +87,7 @@ const JsMinifier = () => {
         <>
             <Head>
                 <title>JavaScript Minifier</title>
-                <meta name="description" content="Minify JavaScript data easily and quickly." />
+                <meta name="description" content="Minify JavaScript data easily and quickly with our user-friendly online tool. Upload your JavaScript file or paste the data to get the minified output instantly." />
                 <meta name="keywords" content="JavaScript minifier, JavaScript minify, minify JavaScript" />
                 <meta name="author" content="Padmashree Jha" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />

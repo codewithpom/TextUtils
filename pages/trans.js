@@ -30,7 +30,7 @@ function App() {
         <>
             <Head>
                 <title>Text Translator</title>
-                <meta name="description" content="Translate your text to different languages easily!" />
+                <meta name="description" content="Translate your text to different languages easily with our free online Text Translator tool. Enter your text and select the language to get the translated text instantly." />
                 <meta name="keywords" content="Text Translator, text, translation, languages" />
                 <meta name="author" content="Padmashree Jha" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />

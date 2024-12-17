@@ -72,7 +72,7 @@ const XmlToJson = () => {
         <>
             <Head>
                 <title>XML to JSON Converter</title>
-                <meta name="description" content="Convert XML data to JSON format easily and quickly." />
+                <meta name="description" content="Convert XML data to JSON format easily and quickly with our user-friendly online tool. Upload your XML file or paste the data to get the JSON output instantly." />
                 <meta name="keywords" content="XML to JSON, XML converter, JSON converter" />
                 <meta name="author" content="Padmashree Jha" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
