@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <SEO
-        title="Txt Utils"
+        title="Txt Utils - The Ultimate Tool for Your Text Needs"
         description="The ultimate tool for your text needs. All for free and without any glitches. It is not run by a single person. It is tun by a community of people like you."
         keywords={[
           "textutils",
