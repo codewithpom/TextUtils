@@ -152,6 +152,32 @@ function UpsideDownText() {
                     navigator.clipboard.writeText(result);
                     alert('Text copied to clipboard!');
                 }}>Copy</button>
+                <div className="text-center" style={{ marginTop: '20px' }}>
+                    <h2>About Upside Down Text Generator</h2>
+                    <p>The Upside Down Text Generator is a fun and easy-to-use online tool that allows you to flip your text upside down. It is a part of the suite of tools offered by txtUtils, a website that aims to provide a comprehensive hub for various textual utilities and enhancements.</p>
+                    <p>With the Upside Down Text Generator, you can easily enter your text, generate the upside down version, and share it with your friends on social media or messaging apps. The tool supports multiple languages and provides a seamless experience for generating upside down text.</p>
+                    <h3>Features</h3>
+                    <ul>
+                        <li>Enter text and generate upside down text</li>
+                        <li>Option to reverse the text</li>
+                        <li>Copy the generated text to clipboard</li>
+                    </ul>
+                    <h3>Usage Instructions</h3>
+                    <p>To use the Upside Down Text Generator, follow these simple steps:</p>
+                    <ol>
+                        <li>Enter the text you want to flip in the text area.</li>
+                        <li>Click on the "Generate Upside Down Text" button to generate the flipped text.</li>
+                        <li>Optionally, check the "Reverse Text" checkbox to reverse the flipped text.</li>
+                        <li>Copy the generated text to clipboard by clicking on the "Copy" button.</li>
+                    </ol>
+                    <h3>Examples</h3>
+                    <p>Here are some examples of how you can use the Upside Down Text Generator:</p>
+                    <ul>
+                        <li>Flip your text upside down and share it on social media for fun.</li>
+                        <li>Generate upside down text for creative and unique messages.</li>
+                        <li>Use the flipped text in your online profiles or signatures.</li>
+                    </ul>
+                </div>
             </div>
             <style jsx>{`
                 .container {
