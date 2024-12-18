@@ -4,8 +4,8 @@ const fetch = require('node-fetch');
 const generateIndexNowRequest = async () => {
     const data = {
         host: "www.txtutils.net",
-        key: "9be76769cd7b480585b4f1bb1a0e7d2d",
-        keyLocation: "https://www.txtutils.net/9be76769cd7b480585b4f1bb1a0e7d2d.txt",
+        key: "ehyxaz76t1jep3r2aj6be5bfpegbkysr",
+        keyLocation: "https://www.txtutils.net/ehyxaz76t1jep3r2aj6be5bfpegbkysr.txt",
         urlList: links.pages.map(page => `https://www.txtutils.net${page.link}`)
     };
 
