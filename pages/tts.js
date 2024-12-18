@@ -63,7 +63,7 @@ export default function TextToSpeech() {
     return (
         <>
             <Head>
-                <title>Text to Speech</title>
+                <title>Text to Speech - Convert Text to Speech Effortlessly</title>
                 <meta name="description" content="Convert text to speech effortlessly with our Text to Speech tool. Choose from various voices and listen to your text in seconds." />
                 <meta name="keywords" content="text to speech, speech synthesis, convert text to speech" />
                 <meta name="author" content="Padmashree Jha" />
@@ -161,4 +161,3 @@ export default function TextToSpeech() {
         </>
     );
 }
-

@@ -20,7 +20,7 @@ export default function MarkdownToHtml() {
     return (
         <>
             <Head>
-                <title>Markdown to HTML</title>
+                <title>Markdown to HTML - Convert Markdown to HTML Effortlessly</title>
                 <meta name="description" content="Convert markdown to HTML format easily and quickly with our user-friendly online tool. Paste your markdown text to get the HTML output instantly." />
                 <meta name="keywords" content="markdown to HTML, convert markdown, markdown parser" />
                 <meta name="author" content="Your Name" />

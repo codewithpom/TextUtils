@@ -1,5 +1,3 @@
-// This is a Nxt.js page
-// With bootstrap
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import SEO from '../components/SEO';
@@ -17,7 +15,7 @@ function App() {
     return (
         <>
             <Head>
-                <title>Text Splitter</title>
+                <title>Text Splitter - Free Tool for Splitting and Organizing Text</title>
                 <meta name="description" content="Discover the Text Splitter Tool, a powerful solution for efficiently breaking down large volumes of text into manageable segments." />
                 <meta name="keywords" content="text splitter, content organization, writing tool, text segmentation, content creation" />
                 <meta name="author" content="Padmashree Jha" />

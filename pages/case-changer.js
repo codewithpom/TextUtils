@@ -1,7 +1,3 @@
-// usestate
-// useeffect
-// Nextjs is being used here along with bootstrap
-
 import Head from "next/head";
 import { useState, useEffect } from "react";
 function App() {
@@ -61,7 +57,7 @@ function App() {
     return (
         <>
             <Head>
-                <title>Case Changer</title>
+                <title>Case Changer - Free Futuristic Tool for Text Manipulation</title>
                 <meta name="description" content="A free futuristic case changer tool without glitches on TxtUtils. Change the case of your text within uppercase, lowercase, capitalize and much more without any hassle." />
                 <meta name="keywords" content="Case changer,text,case converter" />
                 <meta name="author" content="Padmashree Jha" />

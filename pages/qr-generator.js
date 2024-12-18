@@ -27,7 +27,7 @@ export default function QrGenerator() {
     return (
         <>
             <Head>
-                <title>QR Code Generator</title>
+                <title>QR Code Generator - Generate QR Code from Text Easily</title>
                 <meta name="description" content="Generate QR code from text easily and quickly with our user-friendly online tool. Enter your text and get the QR code instantly." />
                 <meta name="keywords" content="QR code generator, qrcode, text to QR code" />
                 <meta name="author" content="Padmashree Jha" />
@@ -87,4 +87,3 @@ export default function QrGenerator() {
         </>
     );
 }
-
