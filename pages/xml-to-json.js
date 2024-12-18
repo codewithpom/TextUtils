@@ -114,6 +114,32 @@ const XmlToJson = () => {
                 ></textarea>
                 <button className="btn btn-secondary mt-3" onClick={copyToClipboard}>Copy to Clipboard</button>
                 <button className="btn btn-secondary mt-3" onClick={saveToFile}>Save as File</button>
+                <div className="text-center" style={{ marginTop: '20px' }}>
+                    <h2>About XML to JSON Converter</h2>
+                    <p>The XML to JSON Converter is a user-friendly online utility that allows you to convert XML data into JSON format effortlessly. It is a part of the suite of tools offered by txtUtils, a website that aims to provide a comprehensive hub for various textual utilities and enhancements.</p>
+                    <p>With the XML to JSON Converter, you can easily upload your XML file or paste the XML data, and get the JSON output instantly. The tool supports multiple XML files and provides a seamless experience for converting XML to JSON.</p>
+                    <h3>Features</h3>
+                    <ul>
+                        <li>Upload XML files or paste XML data</li>
+                        <li>Convert XML data to JSON format</li>
+                        <li>Download the JSON output</li>
+                    </ul>
+                    <h3>Usage Instructions</h3>
+                    <p>To use the XML to JSON Converter, follow these simple steps:</p>
+                    <ol>
+                        <li>Click on the "Choose Files" button to select the XML files you want to convert.</li>
+                        <li>Drag and drop the selected XML files into the tool.</li>
+                        <li>Click on the "Convert" button to convert the XML files to JSON format.</li>
+                        <li>Download the JSON output by clicking on the "Download JSON" link.</li>
+                    </ol>
+                    <h3>Examples</h3>
+                    <p>Here are some examples of how you can use the XML to JSON Converter:</p>
+                    <ul>
+                        <li>Convert XML data from a web service response to JSON format for easier processing.</li>
+                        <li>Transform XML configuration files into JSON format for use in web applications.</li>
+                        <li>Convert XML data from a database export to JSON format for data analysis.</li>
+                    </ul>
+                </div>
             </div>
         </>
     );

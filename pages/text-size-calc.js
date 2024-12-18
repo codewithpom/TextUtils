@@ -45,6 +45,30 @@ function App() {
                         : null
                     }
                 </p>
+                <div className="text-center" style={{ marginTop: '20px' }}>
+                    <h2>About Text Size Calculator</h2>
+                    <p>The Text Size Calculator is a user-friendly online tool that allows you to calculate the size of your text in bytes. It is a part of the suite of tools offered by txtUtils, a website that aims to provide a comprehensive hub for various textual utilities and enhancements.</p>
+                    <p>With the Text Size Calculator, you can easily enter your text and get the size in bytes instantly. The tool supports multiple text formats and provides a seamless experience for calculating text size.</p>
+                    <h3>Features</h3>
+                    <ul>
+                        <li>Enter text and calculate its size in bytes</li>
+                        <li>Supports multiple text formats</li>
+                        <li>Instantly get the size of the text</li>
+                    </ul>
+                    <h3>Usage Instructions</h3>
+                    <p>To use the Text Size Calculator, follow these simple steps:</p>
+                    <ol>
+                        <li>Enter the text you want to calculate the size for in the text area.</li>
+                        <li>The size of the text in bytes will be displayed instantly below the text area.</li>
+                    </ol>
+                    <h3>Examples</h3>
+                    <p>Here are some examples of how you can use the Text Size Calculator:</p>
+                    <ul>
+                        <li>Calculate the size of a text document before sending it via email.</li>
+                        <li>Determine the size of a text message before sending it to ensure it fits within the character limit.</li>
+                        <li>Calculate the size of a text file before uploading it to a website or cloud storage.</li>
+                    </ul>
+                </div>
             </div>
             <style jsx>{`
                 .container {

@@ -112,6 +112,34 @@ const PDFMerge = () => {
           </a>
         </div>
       )}
+      <div className="text-center" style={{ marginTop: '20px' }}>
+        <h2>About PDF Merge Tool</h2>
+        <p>The PDF Merge Tool is a user-friendly online utility that allows you to merge multiple PDF files into a single PDF document. It is a part of the suite of tools offered by txtUtils, a website that aims to provide a comprehensive hub for various textual utilities and enhancements.</p>
+        <p>With the PDF Merge Tool, you can easily drag and drop your PDF files, rearrange their order, and merge them into a single PDF document. The tool supports multiple PDF files and provides a seamless experience for merging PDFs.</p>
+        <h3>Features</h3>
+        <ul>
+          <li>Drag and drop PDF files</li>
+          <li>Rearrange the order of PDF files</li>
+          <li>Merge multiple PDF files into a single PDF document</li>
+          <li>Download the merged PDF document</li>
+        </ul>
+        <h3>Usage Instructions</h3>
+        <p>To use the PDF Merge Tool, follow these simple steps:</p>
+        <ol>
+          <li>Click on the "Choose Files" button to select the PDF files you want to merge.</li>
+          <li>Drag and drop the selected PDF files into the tool.</li>
+          <li>Rearrange the order of the PDF files by dragging and dropping them.</li>
+          <li>Click on the "Merge PDFs" button to merge the PDF files into a single PDF document.</li>
+          <li>Download the merged PDF document by clicking on the "Download Merged PDF" link.</li>
+        </ol>
+        <h3>Examples</h3>
+        <p>Here are some examples of how you can use the PDF Merge Tool:</p>
+        <ul>
+          <li>Combine multiple PDF reports into a single document for easy sharing and distribution.</li>
+          <li>Merge PDF invoices and receipts into a single file for record-keeping.</li>
+          <li>Combine PDF presentations and slides into a single document for a seamless presentation.</li>
+        </ul>
+      </div>
     </div>
   );
 };
