@@ -24,7 +24,7 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "node generate-sitemap.js && next build",
+    "build": "node generate-indexnow-request.js && node generate-sitemap.js && next build",
     "start": "next start"
   },
   "devDependencies": {
