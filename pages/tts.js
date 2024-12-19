@@ -99,7 +99,6 @@ export default function TextToSpeech() {
                 <button className='btn btn-primary' onClick={speakText}>Speak</button>
                 <button className='btn btn-danger' id={'toogle'} onClick={toogle_play_pause}>Stop</button>
 
-                <h1>Text to Speech: A Handy Tool for Text Conversion</h1>
                 <h2>Introduction</h2>
                 <p>Text is one of the most common forms of communication in the digital world. Whether it is for social media, blogging, academic writing, programming, or any other purpose, text plays a vital role in conveying information and expressing ideas. However, text also comes with various challenges and limitations, such as formatting, spelling, grammar, readability, and more. To overcome these challenges and enhance the quality and efficiency of text creation and editing, one needs to use various tools and utilities that can assist in analyzing and transforming text according to the desired style and purpose.</p>
                 <p>One such tool is the Text to Speech tool, a user-friendly online utility that can convert text into speech effortlessly. It is a part of the suite of tools offered by txtUtils, a website that aims to provide a comprehensive hub for various textual utilities and enhancements. In this essay, I will share my personal experience of using the Text to Speech tool, and how it has helped me in dealing with different texts.</p>

@@ -108,7 +108,6 @@ function App() {
                     className='text-center'
                 />
                 {/* write about it in at least 1000 words */}
-                <h1>Text Splitter: A Handy Tool for Text Manipulation</h1>
                 <h2>Introduction</h2>
                 <p>Text is one of the most common forms of communication in the digital world. Whether it is for social media, blogging, academic writing, programming, or any other purpose, text plays a vital role in conveying information and expressing ideas. However, text also comes with various challenges and limitations, such as formatting, spelling, grammar, readability, and more. To overcome these challenges and enhance the quality and efficiency of text creation and editing, one needs to use various tools and utilities that can assist in analyzing and transforming text according to the desired style and purpose.</p>
                 <p>One such tool is the Text Splitter, a user-friendly online utility that can split text into smaller segments based on different delimiters effortlessly. It is a part of the suite of tools offered by txtUtils, a website that aims to provide a comprehensive hub for various textual utilities and enhancements. In this essay, I will share my personal experience of using the Text Splitter tool, and how it has helped me in dealing with different texts.</p>
