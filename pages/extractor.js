@@ -88,7 +88,6 @@ function App() {
                 }}>Copy</button>
 
                 <hr></hr>
-                <h1>Email and URL Extractor: A Handy Tool for Text Manipulation</h1>
                 <h2>Introduction</h2>
                 <p>Text is one of the most common forms of communication in the digital world. Whether it is for social media, blogging, academic writing, programming, or any other purpose, text plays a vital role in conveying information and expressing ideas. However, text also comes with various challenges and limitations, such as formatting, spelling, grammar, readability, and more. To overcome these challenges and enhance the quality and efficiency of text creation and editing, one needs to use various tools and utilities that can assist in analyzing and transforming text according to the desired style and purpose.</p>
                 <p>One such tool is the Email and URL Extractor, a user-friendly online utility that can extract emails and URLs from any text effortlessly. It is a part of the suite of tools offered by txtUtils, a website that aims to provide a comprehensive hub for various textual utilities and enhancements. In this essay, I will share my personal experience of using the Email and URL Extractor tool, and how it has helped me in dealing with different texts.</p>

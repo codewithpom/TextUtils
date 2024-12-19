@@ -115,9 +115,6 @@ function App() {
                     onClick={copyToClipboard}
                 >Copy</button>
                 <hr></hr>
-                <h1 style={{
-                    textAlign: "center",
-                }}>Case Changer: A Handy Tool for Text Manipulation</h1>
                 <h2>Introduction</h2>
                 <p>Text is one of the most common forms of communication in the digital world. Whether it is for social media, blogging, academic writing, programming, or any other purpose, text plays a vital role in conveying information and expressing ideas. However, text also comes with various challenges and limitations, such as formatting, spelling, grammar, readability, and more. To overcome these challenges and enhance the quality and efficiency of text creation and editing, one needs to use various tools and utilities that can assist in manipulating and transforming text according to the desired style and purpose.</p>
                 <p>One such tool is the Case Changer, a user-friendly online utility that can transform text into various case styles effortlessly. It is a part of the suite of tools offered by txtUtils, a website that aims to provide a comprehensive hub for various textual utilities and enhancements. In this essay, I will share my personal experience of using the Case Changer tool, and how it has helped me in dealing with different cases in texts.</p>
